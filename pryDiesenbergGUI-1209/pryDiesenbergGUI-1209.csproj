@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmGUI.cs">
+    <Compile Include="frmBotonera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGUI.Designer.cs">
-      <DependentUpon>frmGUI.cs</DependentUpon>
+    <Compile Include="frmBotonera.Designer.cs">
+      <DependentUpon>frmBotonera.cs</DependentUpon>
     </Compile>
     <Compile Include="frmControles1.cs">
       <SubType>Form</SubType>
@@ -60,8 +60,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmGUI.resx">
-      <DependentUpon>frmGUI.cs</DependentUpon>
+    <EmbeddedResource Include="frmBotonera.resx">
+      <DependentUpon>frmBotonera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmControles1.resx">
       <DependentUpon>frmControles1.cs</DependentUpon>

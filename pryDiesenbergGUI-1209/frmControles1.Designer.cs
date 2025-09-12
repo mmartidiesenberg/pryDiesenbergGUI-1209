@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.lblNombre1 = new System.Windows.Forms.Label();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblNombre3 = new System.Windows.Forms.Label();
             this.txtNombre1 = new System.Windows.Forms.TextBox();
             this.txtNombre2 = new System.Windows.Forms.TextBox();
             this.txtNombre3 = new System.Windows.Forms.TextBox();
             this.txtAgregar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNombre1
@@ -49,25 +51,27 @@
             this.lblNombre1.TabIndex = 1;
             this.lblNombre1.Text = "Nombre 1";
             // 
-            // btn2
+            // btnAtras
             // 
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(95, 333);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(75, 23);
-            this.btn2.TabIndex = 2;
-            this.btn2.Text = "<---";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(95, 333);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 2;
+            this.btnAtras.Text = "<---";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // btn1
+            // btnSiguiente
             // 
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(307, 333);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(75, 23);
-            this.btn1.TabIndex = 3;
-            this.btn1.Text = "--->";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Location = new System.Drawing.Point(307, 333);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.TabIndex = 3;
+            this.btnSiguiente.Text = "--->";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // lblNombre2
             // 
@@ -123,23 +127,45 @@
             this.txtAgregar.Text = "Agregar";
             this.txtAgregar.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(223, 410);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(19, 18);
+            this.lblResultado.TabIndex = 11;
+            this.lblResultado.Text = "R";
+            // 
             // frmControles1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAgregar);
             this.Controls.Add(this.txtNombre3);
             this.Controls.Add(this.txtNombre2);
             this.Controls.Add(this.txtNombre1);
             this.Controls.Add(this.lblNombre3);
             this.Controls.Add(this.lblNombre2);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lblNombre1);
             this.Name = "frmControles1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles de Interfaz Gráfica";
+            this.Load += new System.EventHandler(this.frmControles1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,14 +173,16 @@
 
         #endregion
         private System.Windows.Forms.Label lblNombre1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Label lblNombre2;
         private System.Windows.Forms.Label lblNombre3;
         private System.Windows.Forms.TextBox txtNombre1;
         private System.Windows.Forms.TextBox txtNombre2;
         private System.Windows.Forms.TextBox txtNombre3;
         private System.Windows.Forms.Button txtAgregar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
