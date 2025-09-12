@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryDiesenbergGUI_1209
 {
-    public partial class frmControles : Form
+    public partial class frmControles1 : Form
     {
-        public frmControles()
+        public frmControles1()
         {
             InitializeComponent();
         }
