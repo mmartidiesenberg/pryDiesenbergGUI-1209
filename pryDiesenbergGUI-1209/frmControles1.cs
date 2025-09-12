@@ -31,13 +31,28 @@ namespace pryDiesenbergGUI_1209
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             indice++;
-            lblResultado.Text = vecNombres[indice];
+            if (vecNombres.Length > indice)
+            {
+                lblResultado.Text = vecNombres[indice];
+            }
+            else
+            {
+                btnSiguiente.Enabled = false;
+            }
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            indice--;
-            lblResultado.Text = vecNombres[indice];
+            if (vecNombres.Length > 0 && indice > 0 )
+            {
+                indice--;
+                lblResultado.Text = vecNombres[indice];
+            }
+            else
+            {
+                btnAtras.Enabled = false;  
+            }
+            }
         }
     }
-}
+
