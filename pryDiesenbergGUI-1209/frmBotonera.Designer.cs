@@ -50,7 +50,6 @@
             this.Name = "frmBotonera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Botonera";
-            this.Load += new System.EventHandler(this.frmBotonera_Load);
             this.ResumeLayout(false);
 
         }

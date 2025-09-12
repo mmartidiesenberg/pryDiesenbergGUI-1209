@@ -22,19 +22,7 @@ namespace pryDiesenbergGUI_1209
 
             
         }
-        //varibales globales
-        string[] vecNombres = new string[3];
-        int indice = 0;
-        private void frmBotonera_Load(object sender, EventArgs e)
-        {
-            vecNombres[0] = "luka";
-            vecNombres[1] = "josefina";
-            vecNombres[2] = "Pablo";
-           
-           
-           
-        }
-
+       
         private void btnBotonera_Click_1(object sender, EventArgs e)
         {
             frmControles1 ventanaBotonera = new frmControles1();
