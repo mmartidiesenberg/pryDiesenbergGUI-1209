@@ -60,7 +60,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(276, 161);
+            this.btnSiguiente.Location = new System.Drawing.Point(307, 161);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             // btnUltimo
             // 
-            this.btnUltimo.Location = new System.Drawing.Point(367, 161);
+            this.btnUltimo.Location = new System.Drawing.Point(388, 161);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(75, 23);
             this.btnUltimo.TabIndex = 14;
