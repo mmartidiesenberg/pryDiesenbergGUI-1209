@@ -16,15 +16,22 @@ namespace pryDiesenbergGUI_1209
         {
             InitializeComponent();
         }
-        string[] vecNombres = new string[3];
+        public string[] vecNombres = new string[3];
         int indice = 0;
         private void frmControles1_Load(object sender, EventArgs e)
         {
-            vecNombres[0] = "luka";
+            //vecNombres[0] = "luka";
             vecNombres[1] = "josefina";
             vecNombres[2] = "pablo";
 
             lblResultado.Text = vecNombres[0];
+
+            int indiceCombo = 0;
+
+            while (indiceCombo<vecNombres.Length)
+            {
+                txtNombresR.Items.Add(vecNombres[indiceCombo++]);
+            }
 
         }
         //
@@ -34,6 +41,7 @@ namespace pryDiesenbergGUI_1209
             if (vecNombres.Length > indice)
             {
                 lblResultado.Text = vecNombres[indice];
+                btnAtras.Enabled = true;
             }
             else
             {
@@ -60,12 +68,18 @@ namespace pryDiesenbergGUI_1209
 
         private void btnUltimo_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = vecNombres[vecNombres.Length - 1];    
+            lblResultado.Text = vecNombres[vecNombres.Length - 1];
+            indice = 2;
+            btnAtras.Enabled = true;
+            btnSiguiente.Enabled = false;
         }
 
         private void btnPrimero_Click(object sender, EventArgs e)
         {
             lblResultado.Text = vecNombres[0];
+            indice = 0;
+            btnSiguiente.Enabled = true;
+            btnAtras.Enabled = false;
         }
     }
     }
