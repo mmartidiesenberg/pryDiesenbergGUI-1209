@@ -40,7 +40,7 @@
             // 
             this.lblNombre1.AutoSize = true;
             this.lblNombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre1.Location = new System.Drawing.Point(181, 115);
+            this.lblNombre1.Location = new System.Drawing.Point(197, 168);
             this.lblNombre1.Name = "lblNombre1";
             this.lblNombre1.Size = new System.Drawing.Size(77, 18);
             this.lblNombre1.TabIndex = 1;
@@ -49,7 +49,7 @@
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(95, 161);
+            this.btnAtras.Location = new System.Drawing.Point(93, 193);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
             this.btnAtras.TabIndex = 2;
@@ -60,7 +60,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(307, 161);
+            this.btnSiguiente.Location = new System.Drawing.Point(318, 193);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 3;
@@ -73,14 +73,14 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.ForeColor = System.Drawing.Color.Indigo;
-            this.lblResultado.Location = new System.Drawing.Point(214, 166);
+            this.lblResultado.Location = new System.Drawing.Point(216, 193);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 20);
             this.lblResultado.TabIndex = 11;
             // 
             // btnPrimero
             // 
-            this.btnPrimero.Location = new System.Drawing.Point(12, 161);
+            this.btnPrimero.Location = new System.Drawing.Point(12, 193);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(75, 23);
             this.btnPrimero.TabIndex = 13;
@@ -90,7 +90,7 @@
             // 
             // btnUltimo
             // 
-            this.btnUltimo.Location = new System.Drawing.Point(388, 161);
+            this.btnUltimo.Location = new System.Drawing.Point(399, 193);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(75, 23);
             this.btnUltimo.TabIndex = 14;
