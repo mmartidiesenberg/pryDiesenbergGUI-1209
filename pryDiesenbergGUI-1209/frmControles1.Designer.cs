@@ -31,7 +31,6 @@
             this.lblNombre1 = new System.Windows.Forms.Label();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
-            this.txtNombre1 = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
@@ -41,7 +40,7 @@
             // 
             this.lblNombre1.AutoSize = true;
             this.lblNombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre1.Location = new System.Drawing.Point(193, 93);
+            this.lblNombre1.Location = new System.Drawing.Point(181, 115);
             this.lblNombre1.Name = "lblNombre1";
             this.lblNombre1.Size = new System.Drawing.Size(77, 18);
             this.lblNombre1.TabIndex = 1;
@@ -69,18 +68,11 @@
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
-            // txtNombre1
-            // 
-            this.txtNombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre1.Location = new System.Drawing.Point(180, 114);
-            this.txtNombre1.Name = "txtNombre1";
-            this.txtNombre1.Size = new System.Drawing.Size(100, 24);
-            this.txtNombre1.TabIndex = 6;
-            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.ForeColor = System.Drawing.Color.Indigo;
             this.lblResultado.Location = new System.Drawing.Point(214, 166);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 18);
@@ -110,11 +102,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.txtNombre1);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lblNombre1);
@@ -131,7 +123,6 @@
         private System.Windows.Forms.Label lblNombre1;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnSiguiente;
-        private System.Windows.Forms.TextBox txtNombre1;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnPrimero;
         private System.Windows.Forms.Button btnUltimo;
