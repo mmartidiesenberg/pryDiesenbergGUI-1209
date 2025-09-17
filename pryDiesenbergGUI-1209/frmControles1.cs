@@ -27,7 +27,7 @@ namespace pryDiesenbergGUI_1209
             lblResultado.Text = vecNombres[0];
 
         }
-
+        //
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             indice++;
