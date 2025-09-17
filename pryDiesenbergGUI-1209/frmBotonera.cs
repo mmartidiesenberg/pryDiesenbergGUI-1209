@@ -26,7 +26,17 @@ namespace pryDiesenbergGUI_1209
         private void btnBotonera_Click_1(object sender, EventArgs e)
         {
             frmControles1 ventanaBotonera = new frmControles1();
+
+            ventanaBotonera.vecNombres[0] = "soy hacker";
+
             ventanaBotonera.Show();
+
+            int indiceVectorNombres = 0;
+            while (indiceVectorNombres<ventanaBotonera.vecNombres.Length)
+            {
+                lstNombres.Items.Add(ventanaBotonera.vecNombres[indiceVectorNombres++]);
+            }
+
         }
     }
     }

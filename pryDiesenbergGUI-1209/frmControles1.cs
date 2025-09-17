@@ -16,15 +16,22 @@ namespace pryDiesenbergGUI_1209
         {
             InitializeComponent();
         }
-        string[] vecNombres = new string[3];
+        public string[] vecNombres = new string[3];
         int indice = 0;
         private void frmControles1_Load(object sender, EventArgs e)
         {
-            vecNombres[0] = "luka";
+            //vecNombres[0] = "luka";
             vecNombres[1] = "josefina";
             vecNombres[2] = "pablo";
 
             lblResultado.Text = vecNombres[0];
+
+            int indiceCombo = 0;
+
+            while (indiceCombo<vecNombres.Length)
+            {
+                txtNombresR.Items.Add(vecNombres[indiceCombo++]);
+            }
 
         }
 

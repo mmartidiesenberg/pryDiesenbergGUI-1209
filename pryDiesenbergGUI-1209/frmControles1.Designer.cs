@@ -35,6 +35,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
+            this.txtNombresR = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblNombre1
@@ -99,12 +100,21 @@
             this.btnUltimo.UseVisualStyleBackColor = true;
             this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
+            // txtNombresR
+            // 
+            this.txtNombresR.FormattingEnabled = true;
+            this.txtNombresR.Location = new System.Drawing.Point(171, 277);
+            this.txtNombresR.Name = "txtNombresR";
+            this.txtNombresR.Size = new System.Drawing.Size(121, 21);
+            this.txtNombresR.TabIndex = 15;
+            // 
             // frmControles1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.txtNombresR);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.lblResultado);
@@ -128,6 +138,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnPrimero;
         private System.Windows.Forms.Button btnUltimo;
+        private System.Windows.Forms.ComboBox txtNombresR;
     }
 }
 
