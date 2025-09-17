@@ -54,9 +54,19 @@ namespace pryDiesenbergGUI_1209
             }
                 if (indice < vecNombres.Length)
                 {
-                btnSiguiente.Enabled = true;
+                    btnSiguiente.Enabled = true;
                 }
             }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = vecNombres[vecNombres.Length - 1];    
         }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = vecNombres[0];
+        }
+    }
     }
 
