@@ -48,10 +48,14 @@ namespace pryDiesenbergGUI_1209
                 indice--;
                 lblResultado.Text = vecNombres[indice];
             }
-            else
+                if (indice==0) 
             {
                 btnAtras.Enabled = false;  
             }
+                if (indice < vecNombres.Length)
+                {
+                btnSiguiente.Enabled = true;
+                }
             }
         }
     }
