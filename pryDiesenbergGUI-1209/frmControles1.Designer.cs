@@ -103,7 +103,7 @@
             // txtNombresR
             // 
             this.txtNombresR.FormattingEnabled = true;
-            this.txtNombresR.Location = new System.Drawing.Point(171, 277);
+            this.txtNombresR.Location = new System.Drawing.Point(173, 278);
             this.txtNombresR.Name = "txtNombresR";
             this.txtNombresR.Size = new System.Drawing.Size(121, 21);
             this.txtNombresR.TabIndex = 15;
