@@ -35,7 +35,7 @@
             // 
             // btnBotonera
             // 
-            this.btnBotonera.Location = new System.Drawing.Point(139, 154);
+            this.btnBotonera.Location = new System.Drawing.Point(119, 44);
             this.btnBotonera.Name = "btnBotonera";
             this.btnBotonera.Size = new System.Drawing.Size(183, 58);
             this.btnBotonera.TabIndex = 0;
@@ -46,7 +46,7 @@
             // lstNombres
             // 
             this.lstNombres.FormattingEnabled = true;
-            this.lstNombres.Location = new System.Drawing.Point(104, 246);
+            this.lstNombres.Location = new System.Drawing.Point(82, 137);
             this.lstNombres.Name = "lstNombres";
             this.lstNombres.Size = new System.Drawing.Size(264, 95);
             this.lstNombres.TabIndex = 1;
@@ -56,9 +56,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(420, 287);
             this.Controls.Add(this.lstNombres);
             this.Controls.Add(this.btnBotonera);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBotonera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

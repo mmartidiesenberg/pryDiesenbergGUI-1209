@@ -42,18 +42,20 @@
             // 
             this.lblNombre1.AutoSize = true;
             this.lblNombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre1.Location = new System.Drawing.Point(197, 162);
+            this.lblNombre1.Location = new System.Drawing.Point(394, 312);
+            this.lblNombre1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre1.Name = "lblNombre1";
-            this.lblNombre1.Size = new System.Drawing.Size(77, 18);
+            this.lblNombre1.Size = new System.Drawing.Size(142, 36);
             this.lblNombre1.TabIndex = 1;
             this.lblNombre1.Text = "Nombres";
             // 
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(93, 193);
+            this.btnAtras.Location = new System.Drawing.Point(186, 371);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.Size = new System.Drawing.Size(150, 44);
             this.btnAtras.TabIndex = 2;
             this.btnAtras.Text = "<---";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(318, 193);
+            this.btnSiguiente.Location = new System.Drawing.Point(636, 371);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.Size = new System.Drawing.Size(150, 44);
             this.btnSiguiente.TabIndex = 3;
             this.btnSiguiente.Text = "--->";
             this.btnSiguiente.UseVisualStyleBackColor = true;
@@ -75,16 +78,18 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.ForeColor = System.Drawing.Color.Indigo;
-            this.lblResultado.Location = new System.Drawing.Point(216, 193);
+            this.lblResultado.Location = new System.Drawing.Point(432, 371);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(0, 20);
+            this.lblResultado.Size = new System.Drawing.Size(0, 37);
             this.lblResultado.TabIndex = 11;
             // 
             // btnPrimero
             // 
-            this.btnPrimero.Location = new System.Drawing.Point(12, 193);
+            this.btnPrimero.Location = new System.Drawing.Point(24, 371);
+            this.btnPrimero.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnPrimero.Name = "btnPrimero";
-            this.btnPrimero.Size = new System.Drawing.Size(75, 23);
+            this.btnPrimero.Size = new System.Drawing.Size(150, 44);
             this.btnPrimero.TabIndex = 13;
             this.btnPrimero.Text = "Primero";
             this.btnPrimero.UseVisualStyleBackColor = true;
@@ -92,9 +97,10 @@
             // 
             // btnUltimo
             // 
-            this.btnUltimo.Location = new System.Drawing.Point(399, 193);
+            this.btnUltimo.Location = new System.Drawing.Point(798, 371);
+            this.btnUltimo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnUltimo.Name = "btnUltimo";
-            this.btnUltimo.Size = new System.Drawing.Size(75, 23);
+            this.btnUltimo.Size = new System.Drawing.Size(150, 44);
             this.btnUltimo.TabIndex = 14;
             this.btnUltimo.Text = "Último";
             this.btnUltimo.UseVisualStyleBackColor = true;
@@ -103,17 +109,18 @@
             // txtNombresR
             // 
             this.txtNombresR.FormattingEnabled = true;
-            this.txtNombresR.Location = new System.Drawing.Point(173, 278);
+            this.txtNombresR.Location = new System.Drawing.Point(346, 535);
+            this.txtNombresR.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtNombresR.Name = "txtNombresR";
-            this.txtNombresR.Size = new System.Drawing.Size(121, 21);
+            this.txtNombresR.Size = new System.Drawing.Size(238, 33);
             this.txtNombresR.TabIndex = 15;
             // 
             // frmControles1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(968, 887);
             this.Controls.Add(this.txtNombresR);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnPrimero);
@@ -121,7 +128,9 @@
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lblNombre1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmControles1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles de Interfaz Gráfica";
